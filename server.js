@@ -8,7 +8,10 @@ app.use(bodyParser.urlencoded({extended:false}));
 app.get('/',function(req,res){
   res.send('shubham');
 });
+app.get('/nextstation',function(req,res){
+  
+});
 var port = 8080;
 app.listen(port,function(){
   console.log('web app is listening at port ' + port);
-})
+});
