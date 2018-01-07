@@ -13,6 +13,7 @@
     "request": "^2.81.0",
     "ejs": "*",
     "body-parser": "*",
-    "path": "*"
+    "path": "*",
+    "express-session": "*"
   }
 }
