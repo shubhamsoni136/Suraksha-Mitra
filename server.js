@@ -37,7 +37,7 @@ app.get('/second.css', function(req, res) {
 app.post('/status', function(req, res) {
     var result;
     var i = 0;
-    var key = "cmd6bebf4c";
+    var key = <your api key>;
     var tno = req.body.tno;
     var pnr = req.body.pnr;
     var date = req.body.date;
@@ -75,7 +75,7 @@ app.post('/register', function(req, res) {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
-            "Authorization": "Bearer 6dd03e351413f121452be182d46a06fd4a3eb299e6c5f1bd"
+            "Authorization": <admin token>
         },
         body: {
             "type": "insert",
@@ -114,7 +114,7 @@ app.post('/login', function(req, res) {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
-            "Authorization": "Bearer 6dd03e351413f121452be182d46a06fd4a3eb299e6c5f1bd"
+            "Authorization": <admin token>
         },
         body: {
             "type": "select",
@@ -160,7 +160,7 @@ app.get('/loginpage', function(req, res) {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
-                "Authorization": "Bearer 6dd03e351413f121452be182d46a06fd4a3eb299e6c5f1bd"
+                "Authorization": <admin token>
             },
             body: {
                 "type": "select",
@@ -258,7 +258,7 @@ app.post('/adminlogin', function(req, res) {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
-            "Authorization": "Bearer 6dd03e351413f121452be182d46a06fd4a3eb299e6c5f1bd"
+            "Authorization": <admin token>
         },
         body: {
             "type": "select",
@@ -300,7 +300,7 @@ app.post('/adminlogin', function(req, res) {
 app.post('/registerfir', function(req, res) {
     var result;
     var i = 0;
-    var key = "cmd6bebf4c";
+    var key = <api key>;
     var aadhar = req.body.aadhar;
     var subject = req.body.subject;
     var details = req.body.details;
@@ -331,7 +331,7 @@ app.post('/registerfir', function(req, res) {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
-                    "Authorization": "Bearer 6dd03e351413f121452be182d46a06fd4a3eb299e6c5f1bd"
+                    "Authorization": <admin token>
                 },
                 body: {
                     "type": "insert",
@@ -368,7 +368,7 @@ app.post('/registerfir', function(req, res) {
 app.post('/vehicle', function(req, res) {
     var i = 0;
     var type = req.body.type;
-    var key = "cmd6bebf4c";
+    var key = <api key>;
     var tno = req.body.tno;
     var date = req.body.date;
     var result;
@@ -395,7 +395,7 @@ app.post('/vehicle', function(req, res) {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
-                    "Authorization": "Bearer 6dd03e351413f121452be182d46a06fd4a3eb299e6c5f1bd"
+                    "Authorization": <admin token>
                 },
                 body: {
                     "type": "select",
@@ -442,7 +442,7 @@ app.get('/emecontact', function(req, res) {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
-            "Authorization": "Bearer 6dd03e351413f121452be182d46a06fd4a3eb299e6c5f1bd"
+            "Authorization": <admin token>
         },
         body: {
             "type": "select",
